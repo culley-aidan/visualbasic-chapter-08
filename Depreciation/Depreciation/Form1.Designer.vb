@@ -24,6 +24,7 @@ Partial Class frmDepreciation
     Private Sub InitializeComponent()
         Me.mnuDepreciation = New System.Windows.Forms.MenuStrip()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuDisplay = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuDepreciation.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -38,9 +39,16 @@ Partial Class frmDepreciation
         '
         'mnuFile
         '
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuDisplay})
         Me.mnuFile.Name = "mnuFile"
         Me.mnuFile.Size = New System.Drawing.Size(37, 20)
         Me.mnuFile.Text = "&File"
+        '
+        'mnuDisplay
+        '
+        Me.mnuDisplay.Name = "mnuDisplay"
+        Me.mnuDisplay.Size = New System.Drawing.Size(180, 22)
+        Me.mnuDisplay.Text = "Display Inventory"
         '
         'frmDepreciation
         '
@@ -61,4 +69,5 @@ Partial Class frmDepreciation
 
     Friend WithEvents mnuDepreciation As MenuStrip
     Friend WithEvents mnuFile As ToolStripMenuItem
+    Friend WithEvents mnuDisplay As ToolStripMenuItem
 End Class
