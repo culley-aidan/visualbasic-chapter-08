@@ -22,17 +22,31 @@ Partial Class frmDepreciation
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.mnuDepreciation = New System.Windows.Forms.MenuStrip()
         Me.SuspendLayout()
+        '
+        'mnuDepreciation
+        '
+        Me.mnuDepreciation.Location = New System.Drawing.Point(0, 0)
+        Me.mnuDepreciation.Name = "mnuDepreciation"
+        Me.mnuDepreciation.Size = New System.Drawing.Size(684, 24)
+        Me.mnuDepreciation.TabIndex = 0
+        Me.mnuDepreciation.Text = "MenuStrip1"
         '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.mnuDepreciation)
+        Me.MainMenuStrip = Me.mnuDepreciation
         Me.Name = "frmDepreciation"
         Me.Text = "Compute Depreciation by Method"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents mnuDepreciation As MenuStrip
 End Class
