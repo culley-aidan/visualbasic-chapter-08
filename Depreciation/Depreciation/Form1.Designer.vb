@@ -25,6 +25,7 @@ Partial Class frmDepreciation
         Me.mnuDepreciation = New System.Windows.Forms.MenuStrip()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuDisplay = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuDepreciation.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -39,7 +40,7 @@ Partial Class frmDepreciation
         '
         'mnuFile
         '
-        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuDisplay})
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuDisplay, Me.mnuClear})
         Me.mnuFile.Name = "mnuFile"
         Me.mnuFile.Size = New System.Drawing.Size(37, 20)
         Me.mnuFile.Text = "&File"
@@ -49,6 +50,12 @@ Partial Class frmDepreciation
         Me.mnuDisplay.Name = "mnuDisplay"
         Me.mnuDisplay.Size = New System.Drawing.Size(180, 22)
         Me.mnuDisplay.Text = "Display Inventory"
+        '
+        'mnuClear
+        '
+        Me.mnuClear.Name = "mnuClear"
+        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
+        Me.mnuClear.Text = "Clear"
         '
         'frmDepreciation
         '
@@ -70,4 +77,5 @@ Partial Class frmDepreciation
     Friend WithEvents mnuDepreciation As MenuStrip
     Friend WithEvents mnuFile As ToolStripMenuItem
     Friend WithEvents mnuDisplay As ToolStripMenuItem
+    Friend WithEvents mnuClear As ToolStripMenuItem
 End Class
