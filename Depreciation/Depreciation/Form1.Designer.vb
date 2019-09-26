@@ -30,6 +30,7 @@ Partial Class frmDepreciation
         Me.picTruck = New System.Windows.Forms.PictureBox()
         Me.lblSelectItem = New System.Windows.Forms.Label()
         Me.lstInventoryId = New System.Windows.Forms.ListBox()
+        Me.btnCalculateDepreciation = New System.Windows.Forms.Button()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -83,7 +84,7 @@ Partial Class frmDepreciation
         Me.lblSelectItem.AutoSize = True
         Me.lblSelectItem.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSelectItem.ForeColor = System.Drawing.Color.Gray
-        Me.lblSelectItem.Location = New System.Drawing.Point(224, 117)
+        Me.lblSelectItem.Location = New System.Drawing.Point(224, 102)
         Me.lblSelectItem.Name = "lblSelectItem"
         Me.lblSelectItem.Size = New System.Drawing.Size(156, 16)
         Me.lblSelectItem.TabIndex = 2
@@ -96,10 +97,22 @@ Partial Class frmDepreciation
         Me.lstInventoryId.ForeColor = System.Drawing.Color.Gray
         Me.lstInventoryId.FormattingEnabled = True
         Me.lstInventoryId.ItemHeight = 16
-        Me.lstInventoryId.Location = New System.Drawing.Point(227, 137)
+        Me.lstInventoryId.Location = New System.Drawing.Point(227, 121)
         Me.lstInventoryId.Name = "lstInventoryId"
-        Me.lstInventoryId.Size = New System.Drawing.Size(120, 84)
+        Me.lstInventoryId.Size = New System.Drawing.Size(153, 68)
         Me.lstInventoryId.TabIndex = 3
+        '
+        'btnCalculateDepreciation
+        '
+        Me.btnCalculateDepreciation.BackColor = System.Drawing.Color.OrangeRed
+        Me.btnCalculateDepreciation.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalculateDepreciation.ForeColor = System.Drawing.Color.White
+        Me.btnCalculateDepreciation.Location = New System.Drawing.Point(303, 210)
+        Me.btnCalculateDepreciation.Name = "btnCalculateDepreciation"
+        Me.btnCalculateDepreciation.Size = New System.Drawing.Size(215, 40)
+        Me.btnCalculateDepreciation.TabIndex = 4
+        Me.btnCalculateDepreciation.Text = "Calculate Depreciation"
+        Me.btnCalculateDepreciation.UseVisualStyleBackColor = False
         '
         'frmDepreciation
         '
@@ -107,6 +120,7 @@ Partial Class frmDepreciation
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.btnCalculateDepreciation)
         Me.Controls.Add(Me.lstInventoryId)
         Me.Controls.Add(Me.lblSelectItem)
         Me.Controls.Add(Me.picTruck)
@@ -130,4 +144,5 @@ Partial Class frmDepreciation
     Friend WithEvents picTruck As PictureBox
     Friend WithEvents lblSelectItem As Label
     Friend WithEvents lstInventoryId As ListBox
+    Friend WithEvents btnCalculateDepreciation As Button
 End Class
