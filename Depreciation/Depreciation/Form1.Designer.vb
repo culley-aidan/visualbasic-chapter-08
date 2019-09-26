@@ -23,15 +23,24 @@ Partial Class frmDepreciation
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.mnuDepreciation = New System.Windows.Forms.MenuStrip()
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuDepreciation.SuspendLayout()
         Me.SuspendLayout()
         '
         'mnuDepreciation
         '
+        Me.mnuDepreciation.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile})
         Me.mnuDepreciation.Location = New System.Drawing.Point(0, 0)
         Me.mnuDepreciation.Name = "mnuDepreciation"
         Me.mnuDepreciation.Size = New System.Drawing.Size(684, 24)
         Me.mnuDepreciation.TabIndex = 0
         Me.mnuDepreciation.Text = "MenuStrip1"
+        '
+        'mnuFile
+        '
+        Me.mnuFile.Name = "mnuFile"
+        Me.mnuFile.Size = New System.Drawing.Size(37, 20)
+        Me.mnuFile.Text = "&File"
         '
         'frmDepreciation
         '
@@ -43,10 +52,13 @@ Partial Class frmDepreciation
         Me.MainMenuStrip = Me.mnuDepreciation
         Me.Name = "frmDepreciation"
         Me.Text = "Compute Depreciation by Method"
+        Me.mnuDepreciation.ResumeLayout(False)
+        Me.mnuDepreciation.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents mnuDepreciation As MenuStrip
+    Friend WithEvents mnuFile As ToolStripMenuItem
 End Class
