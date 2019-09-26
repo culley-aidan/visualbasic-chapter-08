@@ -29,6 +29,7 @@ Partial Class frmDepreciation
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.picTruck = New System.Windows.Forms.PictureBox()
         Me.lblSelectItem = New System.Windows.Forms.Label()
+        Me.lstInventoryId = New System.Windows.Forms.ListBox()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -88,12 +89,25 @@ Partial Class frmDepreciation
         Me.lblSelectItem.TabIndex = 2
         Me.lblSelectItem.Text = "Select Inventory Item:"
         '
+        'lstInventoryId
+        '
+        Me.lstInventoryId.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lstInventoryId.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstInventoryId.ForeColor = System.Drawing.Color.Gray
+        Me.lstInventoryId.FormattingEnabled = True
+        Me.lstInventoryId.ItemHeight = 16
+        Me.lstInventoryId.Location = New System.Drawing.Point(227, 137)
+        Me.lstInventoryId.Name = "lstInventoryId"
+        Me.lstInventoryId.Size = New System.Drawing.Size(120, 84)
+        Me.lstInventoryId.TabIndex = 3
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lstInventoryId)
         Me.Controls.Add(Me.lblSelectItem)
         Me.Controls.Add(Me.picTruck)
         Me.Controls.Add(Me.mnuDepreciation)
@@ -115,4 +129,5 @@ Partial Class frmDepreciation
     Friend WithEvents mnuExit As ToolStripMenuItem
     Friend WithEvents picTruck As PictureBox
     Friend WithEvents lblSelectItem As Label
+    Friend WithEvents lstInventoryId As ListBox
 End Class
