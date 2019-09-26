@@ -33,8 +33,10 @@ Partial Class frmDepreciation
         Me.btnCalculateDepreciation = New System.Windows.Forms.Button()
         Me.grpDepreciationType = New System.Windows.Forms.GroupBox()
         Me.lblFoodTruck = New System.Windows.Forms.Label()
+        Me.radStraightLine = New System.Windows.Forms.RadioButton()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.grpDepreciationType.SuspendLayout()
         Me.SuspendLayout()
         '
         'mnuDepreciation
@@ -119,6 +121,7 @@ Partial Class frmDepreciation
         'grpDepreciationType
         '
         Me.grpDepreciationType.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.grpDepreciationType.Controls.Add(Me.radStraightLine)
         Me.grpDepreciationType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpDepreciationType.ForeColor = System.Drawing.Color.Gray
         Me.grpDepreciationType.Location = New System.Drawing.Point(440, 102)
@@ -139,6 +142,17 @@ Partial Class frmDepreciation
         Me.lblFoodTruck.TabIndex = 6
         Me.lblFoodTruck.Text = "Chef Shack Burger Food Truck"
         '
+        'radStraightLine
+        '
+        Me.radStraightLine.AutoSize = True
+        Me.radStraightLine.Location = New System.Drawing.Point(7, 22)
+        Me.radStraightLine.Name = "radStraightLine"
+        Me.radStraightLine.Size = New System.Drawing.Size(113, 20)
+        Me.radStraightLine.TabIndex = 0
+        Me.radStraightLine.TabStop = True
+        Me.radStraightLine.Text = "Straight-Line"
+        Me.radStraightLine.UseVisualStyleBackColor = True
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -158,6 +172,8 @@ Partial Class frmDepreciation
         Me.mnuDepreciation.ResumeLayout(False)
         Me.mnuDepreciation.PerformLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.grpDepreciationType.ResumeLayout(False)
+        Me.grpDepreciationType.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -174,4 +190,5 @@ Partial Class frmDepreciation
     Friend WithEvents btnCalculateDepreciation As Button
     Friend WithEvents grpDepreciationType As GroupBox
     Friend WithEvents lblFoodTruck As Label
+    Friend WithEvents radStraightLine As RadioButton
 End Class
