@@ -28,6 +28,7 @@ Partial Class frmDepreciation
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.picTruck = New System.Windows.Forms.PictureBox()
+        Me.lblSelectItem = New System.Windows.Forms.Label()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -76,12 +77,24 @@ Partial Class frmDepreciation
         Me.picTruck.TabIndex = 1
         Me.picTruck.TabStop = False
         '
+        'lblSelectItem
+        '
+        Me.lblSelectItem.AutoSize = True
+        Me.lblSelectItem.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSelectItem.ForeColor = System.Drawing.Color.Gray
+        Me.lblSelectItem.Location = New System.Drawing.Point(224, 117)
+        Me.lblSelectItem.Name = "lblSelectItem"
+        Me.lblSelectItem.Size = New System.Drawing.Size(156, 16)
+        Me.lblSelectItem.TabIndex = 2
+        Me.lblSelectItem.Text = "Select Inventory Item:"
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lblSelectItem)
         Me.Controls.Add(Me.picTruck)
         Me.Controls.Add(Me.mnuDepreciation)
         Me.MainMenuStrip = Me.mnuDepreciation
@@ -101,4 +114,5 @@ Partial Class frmDepreciation
     Friend WithEvents mnuClear As ToolStripMenuItem
     Friend WithEvents mnuExit As ToolStripMenuItem
     Friend WithEvents picTruck As PictureBox
+    Friend WithEvents lblSelectItem As Label
 End Class
