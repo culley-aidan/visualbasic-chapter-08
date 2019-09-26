@@ -31,6 +31,7 @@ Partial Class frmDepreciation
         Me.lblSelectItem = New System.Windows.Forms.Label()
         Me.lstInventoryId = New System.Windows.Forms.ListBox()
         Me.btnCalculateDepreciation = New System.Windows.Forms.Button()
+        Me.grpDepreciationType = New System.Windows.Forms.GroupBox()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -54,19 +55,19 @@ Partial Class frmDepreciation
         'mnuDisplay
         '
         Me.mnuDisplay.Name = "mnuDisplay"
-        Me.mnuDisplay.Size = New System.Drawing.Size(180, 22)
+        Me.mnuDisplay.Size = New System.Drawing.Size(165, 22)
         Me.mnuDisplay.Text = "Display Inventory"
         '
         'mnuClear
         '
         Me.mnuClear.Name = "mnuClear"
-        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
+        Me.mnuClear.Size = New System.Drawing.Size(165, 22)
         Me.mnuClear.Text = "Clear"
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(165, 22)
         Me.mnuExit.Text = "Exit"
         '
         'picTruck
@@ -114,12 +115,25 @@ Partial Class frmDepreciation
         Me.btnCalculateDepreciation.Text = "Calculate Depreciation"
         Me.btnCalculateDepreciation.UseVisualStyleBackColor = False
         '
+        'grpDepreciationType
+        '
+        Me.grpDepreciationType.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.grpDepreciationType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpDepreciationType.ForeColor = System.Drawing.Color.Gray
+        Me.grpDepreciationType.Location = New System.Drawing.Point(440, 102)
+        Me.grpDepreciationType.Name = "grpDepreciationType"
+        Me.grpDepreciationType.Size = New System.Drawing.Size(232, 87)
+        Me.grpDepreciationType.TabIndex = 5
+        Me.grpDepreciationType.TabStop = False
+        Me.grpDepreciationType.Text = "Select Depreciation Method:"
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.grpDepreciationType)
         Me.Controls.Add(Me.btnCalculateDepreciation)
         Me.Controls.Add(Me.lstInventoryId)
         Me.Controls.Add(Me.lblSelectItem)
@@ -145,4 +159,5 @@ Partial Class frmDepreciation
     Friend WithEvents lblSelectItem As Label
     Friend WithEvents lstInventoryId As ListBox
     Friend WithEvents btnCalculateDepreciation As Button
+    Friend WithEvents grpDepreciationType As GroupBox
 End Class
