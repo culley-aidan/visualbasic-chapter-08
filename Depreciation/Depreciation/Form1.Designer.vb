@@ -26,7 +26,10 @@ Partial Class frmDepreciation
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuDisplay = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.picTruck = New System.Windows.Forms.PictureBox()
         Me.mnuDepreciation.SuspendLayout()
+        CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mnuDepreciation
@@ -40,7 +43,7 @@ Partial Class frmDepreciation
         '
         'mnuFile
         '
-        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuDisplay, Me.mnuClear})
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuDisplay, Me.mnuClear, Me.mnuExit})
         Me.mnuFile.Name = "mnuFile"
         Me.mnuFile.Size = New System.Drawing.Size(37, 20)
         Me.mnuFile.Text = "&File"
@@ -57,18 +60,36 @@ Partial Class frmDepreciation
         Me.mnuClear.Size = New System.Drawing.Size(180, 22)
         Me.mnuClear.Text = "Clear"
         '
+        'mnuExit
+        '
+        Me.mnuExit.Name = "mnuExit"
+        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnuExit.Text = "Exit"
+        '
+        'picTruck
+        '
+        Me.picTruck.Image = Global.Depreciation.My.Resources.Resources.truck
+        Me.picTruck.Location = New System.Drawing.Point(0, 27)
+        Me.picTruck.Name = "picTruck"
+        Me.picTruck.Size = New System.Drawing.Size(193, 223)
+        Me.picTruck.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picTruck.TabIndex = 1
+        Me.picTruck.TabStop = False
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.picTruck)
         Me.Controls.Add(Me.mnuDepreciation)
         Me.MainMenuStrip = Me.mnuDepreciation
         Me.Name = "frmDepreciation"
         Me.Text = "Compute Depreciation by Method"
         Me.mnuDepreciation.ResumeLayout(False)
         Me.mnuDepreciation.PerformLayout()
+        CType(Me.picTruck, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -78,4 +99,6 @@ Partial Class frmDepreciation
     Friend WithEvents mnuFile As ToolStripMenuItem
     Friend WithEvents mnuDisplay As ToolStripMenuItem
     Friend WithEvents mnuClear As ToolStripMenuItem
+    Friend WithEvents mnuExit As ToolStripMenuItem
+    Friend WithEvents picTruck As PictureBox
 End Class
