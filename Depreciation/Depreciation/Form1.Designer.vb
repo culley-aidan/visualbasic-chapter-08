@@ -34,6 +34,7 @@ Partial Class frmDepreciation
         Me.grpDepreciationType = New System.Windows.Forms.GroupBox()
         Me.lblFoodTruck = New System.Windows.Forms.Label()
         Me.radStraightLine = New System.Windows.Forms.RadioButton()
+        Me.radDoubleDeclining = New System.Windows.Forms.RadioButton()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDepreciationType.SuspendLayout()
@@ -121,6 +122,7 @@ Partial Class frmDepreciation
         'grpDepreciationType
         '
         Me.grpDepreciationType.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.grpDepreciationType.Controls.Add(Me.radDoubleDeclining)
         Me.grpDepreciationType.Controls.Add(Me.radStraightLine)
         Me.grpDepreciationType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpDepreciationType.ForeColor = System.Drawing.Color.Gray
@@ -152,6 +154,17 @@ Partial Class frmDepreciation
         Me.radStraightLine.TabStop = True
         Me.radStraightLine.Text = "Straight-Line"
         Me.radStraightLine.UseVisualStyleBackColor = True
+        '
+        'radDoubleDeclining
+        '
+        Me.radDoubleDeclining.AutoSize = True
+        Me.radDoubleDeclining.Location = New System.Drawing.Point(7, 49)
+        Me.radDoubleDeclining.Name = "radDoubleDeclining"
+        Me.radDoubleDeclining.Size = New System.Drawing.Size(146, 20)
+        Me.radDoubleDeclining.TabIndex = 1
+        Me.radDoubleDeclining.TabStop = True
+        Me.radDoubleDeclining.Text = "Double-Declining"
+        Me.radDoubleDeclining.UseVisualStyleBackColor = True
         '
         'frmDepreciation
         '
@@ -191,4 +204,5 @@ Partial Class frmDepreciation
     Friend WithEvents grpDepreciationType As GroupBox
     Friend WithEvents lblFoodTruck As Label
     Friend WithEvents radStraightLine As RadioButton
+    Friend WithEvents radDoubleDeclining As RadioButton
 End Class
