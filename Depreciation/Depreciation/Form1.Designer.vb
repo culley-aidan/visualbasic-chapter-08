@@ -32,6 +32,7 @@ Partial Class frmDepreciation
         Me.lstInventoryId = New System.Windows.Forms.ListBox()
         Me.btnCalculateDepreciation = New System.Windows.Forms.Button()
         Me.grpDepreciationType = New System.Windows.Forms.GroupBox()
+        Me.lblFoodTruck = New System.Windows.Forms.Label()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -127,12 +128,24 @@ Partial Class frmDepreciation
         Me.grpDepreciationType.TabStop = False
         Me.grpDepreciationType.Text = "Select Depreciation Method:"
         '
+        'lblFoodTruck
+        '
+        Me.lblFoodTruck.AutoSize = True
+        Me.lblFoodTruck.Font = New System.Drawing.Font("Impact", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.lblFoodTruck.ForeColor = System.Drawing.Color.OrangeRed
+        Me.lblFoodTruck.Location = New System.Drawing.Point(200, 44)
+        Me.lblFoodTruck.Name = "lblFoodTruck"
+        Me.lblFoodTruck.Size = New System.Drawing.Size(472, 43)
+        Me.lblFoodTruck.TabIndex = 6
+        Me.lblFoodTruck.Text = "Chef Shack Burger Food Truck"
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lblFoodTruck)
         Me.Controls.Add(Me.grpDepreciationType)
         Me.Controls.Add(Me.btnCalculateDepreciation)
         Me.Controls.Add(Me.lstInventoryId)
@@ -160,4 +173,5 @@ Partial Class frmDepreciation
     Friend WithEvents lstInventoryId As ListBox
     Friend WithEvents btnCalculateDepreciation As Button
     Friend WithEvents grpDepreciationType As GroupBox
+    Friend WithEvents lblFoodTruck As Label
 End Class
