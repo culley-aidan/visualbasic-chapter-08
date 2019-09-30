@@ -42,6 +42,7 @@ Partial Class frmDepreciation
         Me.lblPresentValue = New System.Windows.Forms.Label()
         Me.lstPresentValue = New System.Windows.Forms.ListBox()
         Me.lblYearDepreciation = New System.Windows.Forms.Label()
+        Me.lstYearDepreciation = New System.Windows.Forms.ListBox()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDepreciationType.SuspendLayout()
@@ -252,12 +253,23 @@ Partial Class frmDepreciation
         Me.lblYearDepreciation.Text = "Year" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Depreciation" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.lblYearDepreciation.Visible = False
         '
+        'lstYearDepreciation
+        '
+        Me.lstYearDepreciation.ForeColor = System.Drawing.Color.Gray
+        Me.lstYearDepreciation.FormattingEnabled = True
+        Me.lstYearDepreciation.Location = New System.Drawing.Point(401, 337)
+        Me.lstYearDepreciation.Name = "lstYearDepreciation"
+        Me.lstYearDepreciation.Size = New System.Drawing.Size(88, 69)
+        Me.lstYearDepreciation.TabIndex = 14
+        Me.lstYearDepreciation.Visible = False
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lstYearDepreciation)
         Me.Controls.Add(Me.lblYearDepreciation)
         Me.Controls.Add(Me.lstPresentValue)
         Me.Controls.Add(Me.lblPresentValue)
@@ -306,4 +318,5 @@ Partial Class frmDepreciation
     Friend WithEvents lblPresentValue As Label
     Friend WithEvents lstPresentValue As ListBox
     Friend WithEvents lblYearDepreciation As Label
+    Friend WithEvents lstYearDepreciation As ListBox
 End Class
