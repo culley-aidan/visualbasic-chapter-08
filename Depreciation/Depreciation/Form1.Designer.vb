@@ -32,9 +32,10 @@ Partial Class frmDepreciation
         Me.lstInventoryId = New System.Windows.Forms.ListBox()
         Me.btnCalculateDepreciation = New System.Windows.Forms.Button()
         Me.grpDepreciationType = New System.Windows.Forms.GroupBox()
-        Me.lblFoodTruck = New System.Windows.Forms.Label()
-        Me.radStraightLine = New System.Windows.Forms.RadioButton()
         Me.radDoubleDeclining = New System.Windows.Forms.RadioButton()
+        Me.radStraightLine = New System.Windows.Forms.RadioButton()
+        Me.lblFoodTruck = New System.Windows.Forms.Label()
+        Me.lblItem = New System.Windows.Forms.Label()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDepreciationType.SuspendLayout()
@@ -133,16 +134,16 @@ Partial Class frmDepreciation
         Me.grpDepreciationType.TabStop = False
         Me.grpDepreciationType.Text = "Select Depreciation Method:"
         '
-        'lblFoodTruck
+        'radDoubleDeclining
         '
-        Me.lblFoodTruck.AutoSize = True
-        Me.lblFoodTruck.Font = New System.Drawing.Font("Impact", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.lblFoodTruck.ForeColor = System.Drawing.Color.OrangeRed
-        Me.lblFoodTruck.Location = New System.Drawing.Point(200, 44)
-        Me.lblFoodTruck.Name = "lblFoodTruck"
-        Me.lblFoodTruck.Size = New System.Drawing.Size(472, 43)
-        Me.lblFoodTruck.TabIndex = 6
-        Me.lblFoodTruck.Text = "Chef Shack Burger Food Truck"
+        Me.radDoubleDeclining.AutoSize = True
+        Me.radDoubleDeclining.Location = New System.Drawing.Point(7, 49)
+        Me.radDoubleDeclining.Name = "radDoubleDeclining"
+        Me.radDoubleDeclining.Size = New System.Drawing.Size(146, 20)
+        Me.radDoubleDeclining.TabIndex = 1
+        Me.radDoubleDeclining.TabStop = True
+        Me.radDoubleDeclining.Text = "Double-Declining"
+        Me.radDoubleDeclining.UseVisualStyleBackColor = True
         '
         'radStraightLine
         '
@@ -155,16 +156,28 @@ Partial Class frmDepreciation
         Me.radStraightLine.Text = "Straight-Line"
         Me.radStraightLine.UseVisualStyleBackColor = True
         '
-        'radDoubleDeclining
+        'lblFoodTruck
         '
-        Me.radDoubleDeclining.AutoSize = True
-        Me.radDoubleDeclining.Location = New System.Drawing.Point(7, 49)
-        Me.radDoubleDeclining.Name = "radDoubleDeclining"
-        Me.radDoubleDeclining.Size = New System.Drawing.Size(146, 20)
-        Me.radDoubleDeclining.TabIndex = 1
-        Me.radDoubleDeclining.TabStop = True
-        Me.radDoubleDeclining.Text = "Double-Declining"
-        Me.radDoubleDeclining.UseVisualStyleBackColor = True
+        Me.lblFoodTruck.AutoSize = True
+        Me.lblFoodTruck.Font = New System.Drawing.Font("Impact", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.lblFoodTruck.ForeColor = System.Drawing.Color.OrangeRed
+        Me.lblFoodTruck.Location = New System.Drawing.Point(200, 44)
+        Me.lblFoodTruck.Name = "lblFoodTruck"
+        Me.lblFoodTruck.Size = New System.Drawing.Size(472, 43)
+        Me.lblFoodTruck.TabIndex = 6
+        Me.lblFoodTruck.Text = "Chef Shack Burger Food Truck"
+        '
+        'lblItem
+        '
+        Me.lblItem.AutoSize = True
+        Me.lblItem.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblItem.ForeColor = System.Drawing.Color.Gray
+        Me.lblItem.Location = New System.Drawing.Point(273, 265)
+        Me.lblItem.Name = "lblItem"
+        Me.lblItem.Size = New System.Drawing.Size(278, 16)
+        Me.lblItem.TabIndex = 7
+        Me.lblItem.Text = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        Me.lblItem.Visible = False
         '
         'frmDepreciation
         '
@@ -172,6 +185,7 @@ Partial Class frmDepreciation
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lblItem)
         Me.Controls.Add(Me.lblFoodTruck)
         Me.Controls.Add(Me.grpDepreciationType)
         Me.Controls.Add(Me.btnCalculateDepreciation)
@@ -205,4 +219,5 @@ Partial Class frmDepreciation
     Friend WithEvents lblFoodTruck As Label
     Friend WithEvents radStraightLine As RadioButton
     Friend WithEvents radDoubleDeclining As RadioButton
+    Friend WithEvents lblItem As Label
 End Class
