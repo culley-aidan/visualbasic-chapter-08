@@ -37,6 +37,7 @@ Partial Class frmDepreciation
         Me.lblFoodTruck = New System.Windows.Forms.Label()
         Me.lblItem = New System.Windows.Forms.Label()
         Me.lblQuantity = New System.Windows.Forms.Label()
+        Me.lblYear = New System.Windows.Forms.Label()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDepreciationType.SuspendLayout()
@@ -192,12 +193,24 @@ Partial Class frmDepreciation
         Me.lblQuantity.Text = "XXXXXXXXX"
         Me.lblQuantity.Visible = False
         '
+        'lblYear
+        '
+        Me.lblYear.AutoSize = True
+        Me.lblYear.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblYear.ForeColor = System.Drawing.Color.Gray
+        Me.lblYear.Location = New System.Drawing.Point(187, 303)
+        Me.lblYear.Name = "lblYear"
+        Me.lblYear.Size = New System.Drawing.Size(61, 32)
+        Me.lblYear.TabIndex = 9
+        Me.lblYear.Text = "Present" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Year" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lblYear)
         Me.Controls.Add(Me.lblQuantity)
         Me.Controls.Add(Me.lblItem)
         Me.Controls.Add(Me.lblFoodTruck)
@@ -235,4 +248,5 @@ Partial Class frmDepreciation
     Friend WithEvents radDoubleDeclining As RadioButton
     Friend WithEvents lblItem As Label
     Friend WithEvents lblQuantity As Label
+    Friend WithEvents lblYear As Label
 End Class
