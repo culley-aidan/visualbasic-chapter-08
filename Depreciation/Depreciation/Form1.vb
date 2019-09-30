@@ -60,7 +60,7 @@ Public Class frmDepreciation
         If lstInventoryId.SelectedIndex >= 0 Then
             intSelectedItemId = lstInventoryId.SelectedIndex
             If radStraightLine.Checked Then
-                ' insert straightlinedepreciation call here
+                StraightLineDepreciation(intSelectedItemId)
             ElseIf radDoubleDeclining.Checked Then
                 ' insert doubledecliningdeprecion call here
             Else
@@ -69,5 +69,37 @@ Public Class frmDepreciation
         Else
             MsgBox(strSelectInventoryItemIDError, , strMissingSelection)
         End If
+    End Sub
+
+    Private Sub StraightLineDepreciation(ByVal intItemId As Integer)
+        ' This sub procedure computes and displays the straight line depreciation for the item selected
+        ' Declare variables
+        Dim intStraightPresentYear As Integer
+        Dim decStraightPresentYearValue As Decimal = 0
+        Dim decStraightDepreciation As Decimal
+        Dim decStraightTotal As Decimal
+        Dim strDepreciationItem As String = "The depreciation of the item: "
+        Dim strQuantityMessage As String = "Quantity: "
+
+        ' The procedure MakeObjectsVisible is called to display the Form objects
+
+        ' Display the item and quantity of the selected item
+        lblItem.Text = strDepreciationItem & _strInventoryItem(intItemId)
+        lblQuantity.Text = strQuantityMessage & _intQuantity(intItemId).ToString()
+        'The formula for straight-line depreciation
+        decStraightDepreciation = _decInitialPrice(intItemId) / _intLifeOfItems
+        decStraightPresentYearValue = _decInitialPrice(intItemId)
+
+        ' The loop repeats for the life of the items
+        For intStraightPresentYear = 1 To _intLifeOfItems
+            ' Accumulates the total of depreciation
+            decStraightTotal += decStraightDepreciation
+            ' Displays the depreciation amounts 
+            lstYear.Items.Add(intStraightPresentYear.ToString())
+            lstPresentValue.Items.Add(decStraightPresentYearValue.ToString("C"))
+            lstYearDepreciation.Items.Add(decStraightDepreciation.ToString("C"))
+            lstTotalDepreciation.Items.Add(decStraightTotal.ToString("C"))
+            decStraightPresentYearValue -= decStraightDepreciation
+        Next
     End Sub
 End Class
