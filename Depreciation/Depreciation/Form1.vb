@@ -7,5 +7,12 @@
 
 Option Strict On
 Public Class frmDepreciation
+    ' Class Level Private variables
+    Private _intLifeOfItems As Integer = 5
+    Public Shared _intSizeOfArray As Integer = 7
+    Public Shared _strInventoryItem(_intSizeOfArray) As String
+    Private _strItemId(_intSizeOfArray) As String
+    Private _decInitialPrice(_intSizeOfArray) As Decimal
+    Private _intQuantity(_intSizeOfArray) As Integer
 
 End Class
