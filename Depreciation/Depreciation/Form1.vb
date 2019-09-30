@@ -26,6 +26,24 @@ Public Class frmDepreciation
         Dim intFill As Integer
         Dim strFileError As String = "The file is not available. Restart when the file is available"
 
+        If IO.File.Exists(strLocationAndNameOfFile) Then
+            objReader = IO.File.OpenText(strLocationAndNameOfFile)
+            Do While objReader.Peek <> -1
+                _strInventoryItem(intCount) = objReader.ReadLine()
+                _strItemId(intCount) = objReader.ReadLine()
+                _decInitialPrice(intCount) = Convert.ToDecimal(objReader.ReadLine())
+                _intQuantity(intCount) = Convert.ToInt32(objReader.ReadLine())
+                intCount += 1
+            Loop
+            objReader.Close()
 
+            ' The ListBox object is filled with the Inventory IDs
+            For intFill = 0 To (_strItemId.Length - 1)
+                lstInventoryId.Items.Add(_strItemId(intFill))
+            Next
+        Else
+            MsgBox(strFileError, , "Error")
+            Close()
+        End If
     End Sub
 End Class
