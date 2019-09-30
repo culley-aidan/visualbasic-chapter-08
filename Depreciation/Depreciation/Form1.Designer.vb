@@ -69,7 +69,7 @@ Partial Class frmDepreciation
         'mnuDisplay
         '
         Me.mnuDisplay.Name = "mnuDisplay"
-        Me.mnuDisplay.Size = New System.Drawing.Size(165, 22)
+        Me.mnuDisplay.Size = New System.Drawing.Size(180, 22)
         Me.mnuDisplay.Text = "Display Inventory"
         '
         'mnuClear

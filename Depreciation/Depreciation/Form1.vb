@@ -82,7 +82,7 @@ Public Class frmDepreciation
         Dim strQuantityMessage As String = "Quantity: "
 
         ' The procedure MakeObjectsVisible is called to display the Form objects
-
+        MakeObjectsVisible()
         ' Display the item and quantity of the selected item
         lblItem.Text = strDepreciationItem & _strInventoryItem(intItemId)
         lblQuantity.Text = strQuantityMessage & _intQuantity(intItemId).ToString()
@@ -111,7 +111,7 @@ Public Class frmDepreciation
         Dim decDoubleTotal As Decimal
 
         ' The procedure MakeObjectsVisible is called to display the form objects 
-
+        MakeObjectsVisible()
         ' Display the item and the quantity of the selected item 
         lblItem.Text = "The depreciation of the item: " & _strInventoryItem(intItemId)
         lblQuantity.Text = "Quantity: " & _intQuantity(intItemId).ToString()
@@ -131,4 +131,24 @@ Public Class frmDepreciation
             decDoublePresentYearValue -= decDoubleDepreciation
         Next
     End Sub
+
+    Private Sub MakeObjectsVisible()
+        ' This procedure displays the objects showing the results
+        lblItem.Visible = True
+        lblQuantity.Visible = True
+        lblYear.Visible = True
+        lstYear.Visible = True
+        lblPresentValue.Visible = True
+        lstPresentValue.Visible = True
+        lblYearDepreciation.Visible = True
+        lstYearDepreciation.Visible = True
+        lblTotalDepreciation.Visible = True
+        lstTotalDepreciation.Visible = True
+        ' The previous data is removed
+        lstYear.Items.Clear()
+        lstPresentValue.Items.Clear()
+        lstYearDepreciation.Items.Clear()
+        lstTotalDepreciation.Items.Clear()
+    End Sub
+
 End Class
