@@ -38,6 +38,7 @@ Partial Class frmDepreciation
         Me.lblItem = New System.Windows.Forms.Label()
         Me.lblQuantity = New System.Windows.Forms.Label()
         Me.lblYear = New System.Windows.Forms.Label()
+        Me.lstYear = New System.Windows.Forms.ListBox()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDepreciationType.SuspendLayout()
@@ -198,11 +199,22 @@ Partial Class frmDepreciation
         Me.lblYear.AutoSize = True
         Me.lblYear.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblYear.ForeColor = System.Drawing.Color.Gray
-        Me.lblYear.Location = New System.Drawing.Point(187, 303)
+        Me.lblYear.Location = New System.Drawing.Point(132, 304)
         Me.lblYear.Name = "lblYear"
         Me.lblYear.Size = New System.Drawing.Size(61, 32)
         Me.lblYear.TabIndex = 9
         Me.lblYear.Text = "Present" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Year" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.lblYear.Visible = False
+        '
+        'lstYear
+        '
+        Me.lstYear.ForeColor = System.Drawing.Color.Gray
+        Me.lstYear.FormattingEnabled = True
+        Me.lstYear.Location = New System.Drawing.Point(135, 337)
+        Me.lstYear.Name = "lstYear"
+        Me.lstYear.Size = New System.Drawing.Size(88, 69)
+        Me.lstYear.TabIndex = 10
+        Me.lstYear.Visible = False
         '
         'frmDepreciation
         '
@@ -210,6 +222,7 @@ Partial Class frmDepreciation
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lstYear)
         Me.Controls.Add(Me.lblYear)
         Me.Controls.Add(Me.lblQuantity)
         Me.Controls.Add(Me.lblItem)
@@ -249,4 +262,5 @@ Partial Class frmDepreciation
     Friend WithEvents lblItem As Label
     Friend WithEvents lblQuantity As Label
     Friend WithEvents lblYear As Label
+    Friend WithEvents lstYear As ListBox
 End Class
