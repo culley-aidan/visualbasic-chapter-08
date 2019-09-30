@@ -151,4 +151,12 @@ Public Class frmDepreciation
         lstTotalDepreciation.Items.Clear()
     End Sub
 
+    Private Sub MnuDisplay_Click(sender As Object, e As EventArgs) Handles mnuDisplay.Click
+        ' The mnuDisplay click event creates an instance of the frmDisplayInventory
+        Dim frmSecond As New frmDisplayInventory
+
+        ' Hide this form and show the Display Inventory form
+        Hide()
+        frmSecond.ShowDialog()
+    End Sub
 End Class
