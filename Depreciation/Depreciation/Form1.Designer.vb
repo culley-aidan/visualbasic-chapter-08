@@ -43,6 +43,7 @@ Partial Class frmDepreciation
         Me.lstPresentValue = New System.Windows.Forms.ListBox()
         Me.lblYearDepreciation = New System.Windows.Forms.Label()
         Me.lstYearDepreciation = New System.Windows.Forms.ListBox()
+        Me.lblTotalDepreciation = New System.Windows.Forms.Label()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDepreciationType.SuspendLayout()
@@ -263,12 +264,24 @@ Partial Class frmDepreciation
         Me.lstYearDepreciation.TabIndex = 14
         Me.lstYearDepreciation.Visible = False
         '
+        'lblTotalDepreciation
+        '
+        Me.lblTotalDepreciation.AutoSize = True
+        Me.lblTotalDepreciation.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalDepreciation.Location = New System.Drawing.Point(512, 304)
+        Me.lblTotalDepreciation.Name = "lblTotalDepreciation"
+        Me.lblTotalDepreciation.Size = New System.Drawing.Size(97, 32)
+        Me.lblTotalDepreciation.TabIndex = 15
+        Me.lblTotalDepreciation.Text = "Total" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Depreciation"
+        Me.lblTotalDepreciation.Visible = False
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lblTotalDepreciation)
         Me.Controls.Add(Me.lstYearDepreciation)
         Me.Controls.Add(Me.lblYearDepreciation)
         Me.Controls.Add(Me.lstPresentValue)
@@ -319,4 +332,5 @@ Partial Class frmDepreciation
     Friend WithEvents lstPresentValue As ListBox
     Friend WithEvents lblYearDepreciation As Label
     Friend WithEvents lstYearDepreciation As ListBox
+    Friend WithEvents lblTotalDepreciation As Label
 End Class
