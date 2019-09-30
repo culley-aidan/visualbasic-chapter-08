@@ -39,6 +39,7 @@ Partial Class frmDepreciation
         Me.lblQuantity = New System.Windows.Forms.Label()
         Me.lblYear = New System.Windows.Forms.Label()
         Me.lstYear = New System.Windows.Forms.ListBox()
+        Me.lblPresentValue = New System.Windows.Forms.Label()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDepreciationType.SuspendLayout()
@@ -216,12 +217,24 @@ Partial Class frmDepreciation
         Me.lstYear.TabIndex = 10
         Me.lstYear.Visible = False
         '
+        'lblPresentValue
+        '
+        Me.lblPresentValue.AutoSize = True
+        Me.lblPresentValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPresentValue.ForeColor = System.Drawing.Color.Gray
+        Me.lblPresentValue.Location = New System.Drawing.Point(267, 304)
+        Me.lblPresentValue.Name = "lblPresentValue"
+        Me.lblPresentValue.Size = New System.Drawing.Size(61, 32)
+        Me.lblPresentValue.TabIndex = 11
+        Me.lblPresentValue.Text = "Present" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Value" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lblPresentValue)
         Me.Controls.Add(Me.lstYear)
         Me.Controls.Add(Me.lblYear)
         Me.Controls.Add(Me.lblQuantity)
@@ -263,4 +276,5 @@ Partial Class frmDepreciation
     Friend WithEvents lblQuantity As Label
     Friend WithEvents lblYear As Label
     Friend WithEvents lstYear As ListBox
+    Friend WithEvents lblPresentValue As Label
 End Class
