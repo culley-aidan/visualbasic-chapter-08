@@ -25,6 +25,7 @@ Partial Class frmDisplayInventory
         Me.lblTitle2 = New System.Windows.Forms.Label()
         Me.picTruck = New System.Windows.Forms.PictureBox()
         Me.lstDisplay = New System.Windows.Forms.ListBox()
+        Me.btnReturn = New System.Windows.Forms.Button()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -62,12 +63,25 @@ Partial Class frmDisplayInventory
         Me.lstDisplay.Size = New System.Drawing.Size(198, 164)
         Me.lstDisplay.TabIndex = 2
         '
+        'btnReturn
+        '
+        Me.btnReturn.BackColor = System.Drawing.Color.OrangeRed
+        Me.btnReturn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReturn.ForeColor = System.Drawing.Color.White
+        Me.btnReturn.Location = New System.Drawing.Point(89, 287)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(198, 39)
+        Me.btnReturn.TabIndex = 3
+        Me.btnReturn.Text = "Return to Application"
+        Me.btnReturn.UseVisualStyleBackColor = False
+        '
         'frmDisplayInventory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(371, 380)
+        Me.Controls.Add(Me.btnReturn)
         Me.Controls.Add(Me.lstDisplay)
         Me.Controls.Add(Me.picTruck)
         Me.Controls.Add(Me.lblTitle2)
@@ -82,4 +96,5 @@ Partial Class frmDisplayInventory
     Friend WithEvents lblTitle2 As Label
     Friend WithEvents picTruck As PictureBox
     Friend WithEvents lstDisplay As ListBox
+    Friend WithEvents btnReturn As Button
 End Class
