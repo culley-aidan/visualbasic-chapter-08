@@ -22,7 +22,19 @@ Partial Class frmDisplayInventory
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.lblTitle2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
+        '
+        'lblTitle2
+        '
+        Me.lblTitle2.AutoSize = True
+        Me.lblTitle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 17.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle2.ForeColor = System.Drawing.Color.OrangeRed
+        Me.lblTitle2.Location = New System.Drawing.Point(70, 9)
+        Me.lblTitle2.Name = "lblTitle2"
+        Me.lblTitle2.Size = New System.Drawing.Size(230, 29)
+        Me.lblTitle2.TabIndex = 0
+        Me.lblTitle2.Text = "Chef Stack Inventory"
         '
         'frmDisplayInventory
         '
@@ -30,9 +42,13 @@ Partial Class frmDisplayInventory
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(371, 380)
+        Me.Controls.Add(Me.lblTitle2)
         Me.Name = "frmDisplayInventory"
         Me.Text = "Sorted Inventory Listing"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents lblTitle2 As Label
 End Class
