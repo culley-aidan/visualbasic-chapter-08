@@ -15,4 +15,17 @@ Public Class frmDepreciation
     Private _decInitialPrice(_intSizeOfArray) As Decimal
     Private _intQuantity(_intSizeOfArray) As Integer
 
+    Private Sub FrmDepreciation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' The frmDepreciation load event reads the inventory text file and
+        ' fills the Listbox object with the inventory items
+
+        ' Initialize an instance of the StreamReader object and declare variables
+        Dim objReader As IO.StreamReader
+        Dim strLocationAndNameOfFile As String = "\inventory.txt"
+        Dim intCount As Integer = 0
+        Dim intFill As Integer
+        Dim strFileError As String = "The file is not available. Restart when the file is available"
+
+
+    End Sub
 End Class
