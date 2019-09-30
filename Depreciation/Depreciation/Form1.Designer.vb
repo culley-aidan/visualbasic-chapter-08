@@ -27,7 +27,6 @@ Partial Class frmDepreciation
         Me.mnuDisplay = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
-        Me.picTruck = New System.Windows.Forms.PictureBox()
         Me.lblSelectItem = New System.Windows.Forms.Label()
         Me.lstInventoryId = New System.Windows.Forms.ListBox()
         Me.btnCalculateDepreciation = New System.Windows.Forms.Button()
@@ -45,9 +44,10 @@ Partial Class frmDepreciation
         Me.lstYearDepreciation = New System.Windows.Forms.ListBox()
         Me.lblTotalDepreciation = New System.Windows.Forms.Label()
         Me.lstTotalDepreciation = New System.Windows.Forms.ListBox()
+        Me.picTruck = New System.Windows.Forms.PictureBox()
         Me.mnuDepreciation.SuspendLayout()
-        CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDepreciationType.SuspendLayout()
+        CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mnuDepreciation
@@ -83,16 +83,6 @@ Partial Class frmDepreciation
         Me.mnuExit.Name = "mnuExit"
         Me.mnuExit.Size = New System.Drawing.Size(165, 22)
         Me.mnuExit.Text = "Exit"
-        '
-        'picTruck
-        '
-        Me.picTruck.Image = Global.Depreciation.My.Resources.Resources.truck
-        Me.picTruck.Location = New System.Drawing.Point(0, 27)
-        Me.picTruck.Name = "picTruck"
-        Me.picTruck.Size = New System.Drawing.Size(193, 223)
-        Me.picTruck.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picTruck.TabIndex = 1
-        Me.picTruck.TabStop = False
         '
         'lblSelectItem
         '
@@ -286,6 +276,16 @@ Partial Class frmDepreciation
         Me.lstTotalDepreciation.TabIndex = 16
         Me.lstTotalDepreciation.Visible = False
         '
+        'picTruck
+        '
+        Me.picTruck.Image = Global.Depreciation.My.Resources.Resources.truck
+        Me.picTruck.Location = New System.Drawing.Point(0, 27)
+        Me.picTruck.Name = "picTruck"
+        Me.picTruck.Size = New System.Drawing.Size(193, 223)
+        Me.picTruck.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picTruck.TabIndex = 1
+        Me.picTruck.TabStop = False
+        '
         'frmDepreciation
         '
         Me.AcceptButton = Me.btnCalculateDepreciation
@@ -316,9 +316,9 @@ Partial Class frmDepreciation
         Me.Text = "Compute Depreciation by Method"
         Me.mnuDepreciation.ResumeLayout(False)
         Me.mnuDepreciation.PerformLayout()
-        CType(Me.picTruck, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpDepreciationType.ResumeLayout(False)
         Me.grpDepreciationType.PerformLayout()
+        CType(Me.picTruck, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
