@@ -44,6 +44,7 @@ Partial Class frmDepreciation
         Me.lblYearDepreciation = New System.Windows.Forms.Label()
         Me.lstYearDepreciation = New System.Windows.Forms.ListBox()
         Me.lblTotalDepreciation = New System.Windows.Forms.Label()
+        Me.lstTotalDepreciation = New System.Windows.Forms.ListBox()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDepreciationType.SuspendLayout()
@@ -226,7 +227,7 @@ Partial Class frmDepreciation
         Me.lblPresentValue.AutoSize = True
         Me.lblPresentValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPresentValue.ForeColor = System.Drawing.Color.Gray
-        Me.lblPresentValue.Location = New System.Drawing.Point(267, 304)
+        Me.lblPresentValue.Location = New System.Drawing.Point(253, 302)
         Me.lblPresentValue.Name = "lblPresentValue"
         Me.lblPresentValue.Size = New System.Drawing.Size(61, 32)
         Me.lblPresentValue.TabIndex = 11
@@ -237,7 +238,7 @@ Partial Class frmDepreciation
         '
         Me.lstPresentValue.ForeColor = System.Drawing.Color.Gray
         Me.lstPresentValue.FormattingEnabled = True
-        Me.lstPresentValue.Location = New System.Drawing.Point(270, 337)
+        Me.lstPresentValue.Location = New System.Drawing.Point(256, 337)
         Me.lstPresentValue.Name = "lstPresentValue"
         Me.lstPresentValue.Size = New System.Drawing.Size(88, 69)
         Me.lstPresentValue.TabIndex = 12
@@ -247,7 +248,7 @@ Partial Class frmDepreciation
         '
         Me.lblYearDepreciation.AutoSize = True
         Me.lblYearDepreciation.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblYearDepreciation.Location = New System.Drawing.Point(398, 304)
+        Me.lblYearDepreciation.Location = New System.Drawing.Point(372, 302)
         Me.lblYearDepreciation.Name = "lblYearDepreciation"
         Me.lblYearDepreciation.Size = New System.Drawing.Size(97, 32)
         Me.lblYearDepreciation.TabIndex = 13
@@ -258,7 +259,7 @@ Partial Class frmDepreciation
         '
         Me.lstYearDepreciation.ForeColor = System.Drawing.Color.Gray
         Me.lstYearDepreciation.FormattingEnabled = True
-        Me.lstYearDepreciation.Location = New System.Drawing.Point(401, 337)
+        Me.lstYearDepreciation.Location = New System.Drawing.Point(375, 337)
         Me.lstYearDepreciation.Name = "lstYearDepreciation"
         Me.lstYearDepreciation.Size = New System.Drawing.Size(88, 69)
         Me.lstYearDepreciation.TabIndex = 14
@@ -268,12 +269,22 @@ Partial Class frmDepreciation
         '
         Me.lblTotalDepreciation.AutoSize = True
         Me.lblTotalDepreciation.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalDepreciation.Location = New System.Drawing.Point(512, 304)
+        Me.lblTotalDepreciation.Location = New System.Drawing.Point(502, 304)
         Me.lblTotalDepreciation.Name = "lblTotalDepreciation"
         Me.lblTotalDepreciation.Size = New System.Drawing.Size(97, 32)
         Me.lblTotalDepreciation.TabIndex = 15
         Me.lblTotalDepreciation.Text = "Total" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Depreciation"
         Me.lblTotalDepreciation.Visible = False
+        '
+        'lstTotalDepreciation
+        '
+        Me.lstTotalDepreciation.ForeColor = System.Drawing.Color.Gray
+        Me.lstTotalDepreciation.FormattingEnabled = True
+        Me.lstTotalDepreciation.Location = New System.Drawing.Point(505, 337)
+        Me.lstTotalDepreciation.Name = "lstTotalDepreciation"
+        Me.lstTotalDepreciation.Size = New System.Drawing.Size(88, 69)
+        Me.lstTotalDepreciation.TabIndex = 16
+        Me.lstTotalDepreciation.Visible = False
         '
         'frmDepreciation
         '
@@ -281,6 +292,7 @@ Partial Class frmDepreciation
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lstTotalDepreciation)
         Me.Controls.Add(Me.lblTotalDepreciation)
         Me.Controls.Add(Me.lstYearDepreciation)
         Me.Controls.Add(Me.lblYearDepreciation)
@@ -333,4 +345,5 @@ Partial Class frmDepreciation
     Friend WithEvents lblYearDepreciation As Label
     Friend WithEvents lstYearDepreciation As ListBox
     Friend WithEvents lblTotalDepreciation As Label
+    Friend WithEvents lstTotalDepreciation As ListBox
 End Class
