@@ -5,7 +5,7 @@
 '               the depreciation based on a 5 year life of items in inventory
 '               using the straight-line and double-declining balance methods.
 
-
+Option Strict On
 Public Class frmDepreciation
 
 End Class
