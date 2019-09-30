@@ -36,6 +36,7 @@ Partial Class frmDepreciation
         Me.radStraightLine = New System.Windows.Forms.RadioButton()
         Me.lblFoodTruck = New System.Windows.Forms.Label()
         Me.lblItem = New System.Windows.Forms.Label()
+        Me.lblQuantity = New System.Windows.Forms.Label()
         Me.mnuDepreciation.SuspendLayout()
         CType(Me.picTruck, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.grpDepreciationType.SuspendLayout()
@@ -179,12 +180,25 @@ Partial Class frmDepreciation
         Me.lblItem.Text = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         Me.lblItem.Visible = False
         '
+        'lblQuantity
+        '
+        Me.lblQuantity.AutoSize = True
+        Me.lblQuantity.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblQuantity.ForeColor = System.Drawing.Color.Gray
+        Me.lblQuantity.Location = New System.Drawing.Point(372, 281)
+        Me.lblQuantity.Name = "lblQuantity"
+        Me.lblQuantity.Size = New System.Drawing.Size(89, 16)
+        Me.lblQuantity.TabIndex = 8
+        Me.lblQuantity.Text = "XXXXXXXXX"
+        Me.lblQuantity.Visible = False
+        '
         'frmDepreciation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(684, 431)
+        Me.Controls.Add(Me.lblQuantity)
         Me.Controls.Add(Me.lblItem)
         Me.Controls.Add(Me.lblFoodTruck)
         Me.Controls.Add(Me.grpDepreciationType)
@@ -220,4 +234,5 @@ Partial Class frmDepreciation
     Friend WithEvents radStraightLine As RadioButton
     Friend WithEvents radDoubleDeclining As RadioButton
     Friend WithEvents lblItem As Label
+    Friend WithEvents lblQuantity As Label
 End Class
