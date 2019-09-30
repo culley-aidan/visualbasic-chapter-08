@@ -46,4 +46,28 @@ Public Class frmDepreciation
             Close()
         End If
     End Sub
+
+    Private Sub BtnCalculateDepreciation_Click(sender As Object, e As EventArgs) Handles btnCalculateDepreciation.Click
+        ' The btnCalculatedepreciation click event calls the depreciation sub procedures
+        ' Declare variables
+        Dim intSelectedItemId As Integer
+        Dim strMissingSelection As String = "Missing Selection"
+        Dim strSelectDepreciationError As String = "Select a Depreciation Method"
+        Dim strSelectInventoryItemIDError As String = "Select an Inventory Item ID"
+
+        ' If the ListBox and a Depreciation RadioButton object are selected,
+        ' call the depreciation procedures
+        If lstInventoryId.SelectedIndex >= 0 Then
+            intSelectedItemId = lstInventoryId.SelectedIndex
+            If radStraightLine.Checked Then
+                ' insert straightlinedepreciation call here
+            ElseIf radDoubleDeclining.Checked Then
+                ' insert doubledecliningdeprecion call here
+            Else
+                MsgBox(strSelectDepreciationError, , strMissingSelection)
+            End If
+        Else
+            MsgBox(strSelectInventoryItemIDError, , strMissingSelection)
+        End If
+    End Sub
 End Class
