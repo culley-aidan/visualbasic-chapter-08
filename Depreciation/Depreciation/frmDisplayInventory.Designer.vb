@@ -28,7 +28,8 @@ Partial Class frmDisplayInventory
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(371, 380)
         Me.Name = "frmDisplayInventory"
         Me.Text = "Sorted Inventory Listing"
         Me.ResumeLayout(False)
