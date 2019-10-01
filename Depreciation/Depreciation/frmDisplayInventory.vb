@@ -17,4 +17,12 @@ Public Class frmDisplayInventory
             lstDisplay.Items.Add(strItem)
         Next
     End Sub
+
+    Private Sub BtnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
+        ' This Sub procedure opens the first form 
+        Dim frmFirst As New frmDepreciation
+
+        Hide()
+        frmFirst.ShowDialog()
+    End Sub
 End Class
