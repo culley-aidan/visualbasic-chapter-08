@@ -180,4 +180,9 @@ Public Class frmDepreciation
         lstTotalDepreciation.Visible = False
         lstTotalDepreciation.Items.Clear()
     End Sub
+
+    Private Sub MnuExit_Click(sender As Object, e As EventArgs) Handles mnuExit.Click
+        ' The mnuExit click event closes the application
+        Application.Exit()
+    End Sub
 End Class
