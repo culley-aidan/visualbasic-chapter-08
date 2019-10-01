@@ -75,13 +75,13 @@ Partial Class frmDepreciation
         'mnuClear
         '
         Me.mnuClear.Name = "mnuClear"
-        Me.mnuClear.Size = New System.Drawing.Size(165, 22)
+        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
         Me.mnuClear.Text = "Clear"
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(165, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
         Me.mnuExit.Text = "Exit"
         '
         'lblSelectItem

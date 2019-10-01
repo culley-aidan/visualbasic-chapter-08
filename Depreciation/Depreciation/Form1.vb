@@ -159,4 +159,25 @@ Public Class frmDepreciation
         Hide()
         frmSecond.ShowDialog()
     End Sub
+
+    Private Sub MnuClear_Click(sender As Object, e As EventArgs) Handles mnuClear.Click
+        ' The mnuClear click event clears and resets the form 
+        lstInventoryId.SelectedIndex = -1
+        radStraightLine.Checked = False
+        radDoubleDeclining.Checked = False
+        lblItem.Visible = False
+        lblQuantity.Visible = False
+        lblYear.Visible = False
+        lstYear.Visible = False
+        lstYear.Items.Clear()
+        lblPresentValue.Visible = False
+        lstPresentValue.Visible = False
+        lstPresentValue.Items.Clear()
+        lblYearDepreciation.Visible = False
+        lstYearDepreciation.Visible = False
+        lstYearDepreciation.Items.Clear()
+        lblTotalDepreciation.Visible = False
+        lstTotalDepreciation.Visible = False
+        lstTotalDepreciation.Items.Clear()
+    End Sub
 End Class
