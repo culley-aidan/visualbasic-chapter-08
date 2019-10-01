@@ -26,8 +26,10 @@ Public Class frmDepreciation
         Dim intFill As Integer
         Dim strFileError As String = "The file is not available. Restart when the file is available"
 
+        ' Verify the file exists
         If IO.File.Exists(strLocationAndNameOfFile) Then
             objReader = IO.File.OpenText(strLocationAndNameOfFile)
+            ' Read the file line by line until file is completed
             Do While objReader.Peek <> -1
                 _strInventoryItem(intCount) = objReader.ReadLine()
                 _strItemId(intCount) = objReader.ReadLine()
