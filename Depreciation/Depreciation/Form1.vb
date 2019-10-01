@@ -21,7 +21,7 @@ Public Class frmDepreciation
 
         ' Initialize an instance of the StreamReader object and declare variables
         Dim objReader As IO.StreamReader
-        Dim strLocationAndNameOfFile As String = "\inventory.txt"
+        Dim strLocationAndNameOfFile As String = "..\\..\\inventory.txt"
         Dim intCount As Integer = 0
         Dim intFill As Integer
         Dim strFileError As String = "The file is not available. Restart when the file is available"
