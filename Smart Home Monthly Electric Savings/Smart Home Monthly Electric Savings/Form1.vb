@@ -8,6 +8,7 @@ Public Class frmSmartHome
     Dim intSize As Integer = 11
     Dim strMonths(intSize) As String
     Dim decSavings(intSize) As Decimal
+    Dim index As Integer
     Private Sub FrmSmartHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' declarations
         Dim objReader As IO.StreamReader
@@ -35,5 +36,25 @@ Public Class frmSmartHome
             index = cboMonth.SelectedIndex
         End If
     End Sub
+
+    Private Sub BtnStatistics_Click(sender As Object, e As EventArgs) Handles btnStatistics.Click
+        lblSavings.Text = String.Format("The electric savings for {0} is {1}", strMonths(index), decSavings(index).ToString("C"))
+        Dim iterations As Integer = 0
+        Dim totalSavings As Decimal
+        Dim averageSavings As Decimal
+        Do While iterations <> 12
+            totalSavings += decSavings(iterations)
+            iterations += 1
+        Loop
+        averageSavings = totalSavings / 12
+        lblAverageSavings.Text = String.Format("The average monthly savings: {0}", averageSavings.ToString("C"))
+        lblMostSavings.Text = String.Format("{0} had the most significant monthly savings", strMonths(Array.IndexOf(decSavings, decSavings.Max())))
+        Houdini()
+    End Sub
+    Private Sub Houdini()
+        ' makes things visible epic
+        lblSavings.Visible = True
+        lblAverageSavings.Visible = True
+        lblMostSavings.Visible = True
     End Sub
 End Class
