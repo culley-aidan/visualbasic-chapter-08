@@ -24,12 +24,13 @@ Partial Class frmDanceBand
     Private Sub InitializeComponent()
         Me.mnuDanceBand = New System.Windows.Forms.MenuStrip()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuDisplay = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuDanceBand.SuspendLayout()
         Me.SuspendLayout()
         '
         'mnuDanceBand
         '
-        Me.mnuDanceBand.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.mnuDanceBand.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile})
         Me.mnuDanceBand.Location = New System.Drawing.Point(0, 0)
         Me.mnuDanceBand.Name = "mnuDanceBand"
         Me.mnuDanceBand.Size = New System.Drawing.Size(800, 24)
@@ -37,6 +38,18 @@ Partial Class frmDanceBand
         Me.mnuDanceBand.Text = "MenuStrip1"
         '
         'mnuFile
+        '
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuDisplay})
+        Me.mnuFile.Name = "mnuFile"
+        Me.mnuFile.Size = New System.Drawing.Size(37, 20)
+        Me.mnuFile.Text = "&File"
+        '
+        'mnuDisplay
+        '
+        Me.mnuDisplay.Name = "mnuDisplay"
+        Me.mnuDisplay.Size = New System.Drawing.Size(180, 22)
+        Me.mnuDisplay.Text = "Display Song Set "
+        '
         'frmDanceBand
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -54,4 +67,6 @@ Partial Class frmDanceBand
     End Sub
 
     Friend WithEvents mnuDanceBand As MenuStrip
+    Friend WithEvents mnuFile As ToolStripMenuItem
+    Friend WithEvents mnuDisplay As ToolStripMenuItem
 End Class
