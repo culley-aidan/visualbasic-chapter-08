@@ -27,6 +27,8 @@ Partial Class frmSmartHome
         Me.cboMonth = New System.Windows.Forms.ComboBox()
         Me.lblSavings = New System.Windows.Forms.Label()
         Me.btnStatistics = New System.Windows.Forms.Button()
+        Me.lblAverageSavings = New System.Windows.Forms.Label()
+        Me.lblMostSavings = New System.Windows.Forms.Label()
         CType(Me.picSmartHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -82,12 +84,34 @@ Partial Class frmSmartHome
         Me.btnStatistics.Text = "Display Statistics "
         Me.btnStatistics.UseVisualStyleBackColor = False
         '
+        'lblAverageSavings
+        '
+        Me.lblAverageSavings.AutoSize = True
+        Me.lblAverageSavings.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAverageSavings.Location = New System.Drawing.Point(106, 368)
+        Me.lblAverageSavings.Name = "lblAverageSavings"
+        Me.lblAverageSavings.Size = New System.Drawing.Size(313, 20)
+        Me.lblAverageSavings.TabIndex = 5
+        Me.lblAverageSavings.Text = "The average monthly savings: $XX.XX"
+        '
+        'lblMostSavings
+        '
+        Me.lblMostSavings.AutoSize = True
+        Me.lblMostSavings.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMostSavings.Location = New System.Drawing.Point(53, 405)
+        Me.lblMostSavings.Name = "lblMostSavings"
+        Me.lblMostSavings.Size = New System.Drawing.Size(410, 20)
+        Me.lblMostSavings.TabIndex = 6
+        Me.lblMostSavings.Text = "xxxxxxxxx had the most significant monthly savings"
+        '
         'frmSmartHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.ClientSize = New System.Drawing.Size(540, 450)
+        Me.Controls.Add(Me.lblMostSavings)
+        Me.Controls.Add(Me.lblAverageSavings)
         Me.Controls.Add(Me.btnStatistics)
         Me.Controls.Add(Me.lblSavings)
         Me.Controls.Add(Me.cboMonth)
@@ -106,4 +130,6 @@ Partial Class frmSmartHome
     Friend WithEvents cboMonth As ComboBox
     Friend WithEvents lblSavings As Label
     Friend WithEvents btnStatistics As Button
+    Friend WithEvents lblAverageSavings As Label
+    Friend WithEvents lblMostSavings As Label
 End Class
