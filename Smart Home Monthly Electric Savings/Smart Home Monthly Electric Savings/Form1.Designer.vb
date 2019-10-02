@@ -71,6 +71,7 @@ Partial Class frmSmartHome
         Me.lblSavings.Size = New System.Drawing.Size(357, 20)
         Me.lblSavings.TabIndex = 3
         Me.lblSavings.Text = "The electric savings for xxxxxxxxx is $XX.XX"
+        Me.lblSavings.Visible = False
         '
         'btnStatistics
         '
@@ -83,6 +84,7 @@ Partial Class frmSmartHome
         Me.btnStatistics.TabIndex = 4
         Me.btnStatistics.Text = "Display Statistics "
         Me.btnStatistics.UseVisualStyleBackColor = False
+        Me.btnStatistics.Visible = False
         '
         'lblAverageSavings
         '
@@ -93,6 +95,7 @@ Partial Class frmSmartHome
         Me.lblAverageSavings.Size = New System.Drawing.Size(313, 20)
         Me.lblAverageSavings.TabIndex = 5
         Me.lblAverageSavings.Text = "The average monthly savings: $XX.XX"
+        Me.lblAverageSavings.Visible = False
         '
         'lblMostSavings
         '
@@ -103,6 +106,7 @@ Partial Class frmSmartHome
         Me.lblMostSavings.Size = New System.Drawing.Size(410, 20)
         Me.lblMostSavings.TabIndex = 6
         Me.lblMostSavings.Text = "xxxxxxxxx had the most significant monthly savings"
+        Me.lblMostSavings.Visible = False
         '
         'frmSmartHome
         '
