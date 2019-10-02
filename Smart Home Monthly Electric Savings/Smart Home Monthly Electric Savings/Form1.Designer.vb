@@ -25,6 +25,7 @@ Partial Class frmSmartHome
         Me.picSmartHome = New System.Windows.Forms.PictureBox()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.cboMonth = New System.Windows.Forms.ComboBox()
+        Me.lblSavings = New System.Windows.Forms.Label()
         CType(Me.picSmartHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -58,12 +59,23 @@ Partial Class frmSmartHome
         Me.cboMonth.Size = New System.Drawing.Size(121, 32)
         Me.cboMonth.TabIndex = 2
         '
+        'lblSavings
+        '
+        Me.lblSavings.AutoSize = True
+        Me.lblSavings.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSavings.Location = New System.Drawing.Point(89, 275)
+        Me.lblSavings.Name = "lblSavings"
+        Me.lblSavings.Size = New System.Drawing.Size(357, 20)
+        Me.lblSavings.TabIndex = 3
+        Me.lblSavings.Text = "The electric savings for xxxxxxxxx is $XX.XX"
+        '
         'frmSmartHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.ClientSize = New System.Drawing.Size(540, 450)
+        Me.Controls.Add(Me.lblSavings)
         Me.Controls.Add(Me.cboMonth)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.picSmartHome)
@@ -78,4 +90,5 @@ Partial Class frmSmartHome
     Friend WithEvents picSmartHome As PictureBox
     Friend WithEvents lblTitle As Label
     Friend WithEvents cboMonth As ComboBox
+    Friend WithEvents lblSavings As Label
 End Class
