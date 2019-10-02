@@ -29,5 +29,8 @@ Public Class frmSmartHome
             Next
         End If
     End Sub
+    Private Sub CboMonth_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboMonth.SelectedIndexChanged
+        btnStatistics.Visible = True
+    End Sub
     End Sub
 End Class
