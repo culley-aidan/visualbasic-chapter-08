@@ -22,17 +22,33 @@ Partial Class frmDanceBand
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.mnuDanceBand = New System.Windows.Forms.MenuStrip()
+        Me.mnuDanceBand.SuspendLayout()
         Me.SuspendLayout()
         '
+        'mnuDanceBand
+        '
+        Me.mnuDanceBand.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.mnuDanceBand.Location = New System.Drawing.Point(0, 0)
+        Me.mnuDanceBand.Name = "mnuDanceBand"
+        Me.mnuDanceBand.Size = New System.Drawing.Size(800, 24)
+        Me.mnuDanceBand.TabIndex = 0
+        Me.mnuDanceBand.Text = "MenuStrip1"
         'frmDanceBand
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.mnuDanceBand)
+        Me.MainMenuStrip = Me.mnuDanceBand
         Me.Name = "frmDanceBand"
         Me.Text = "Dance Band "
+        Me.mnuDanceBand.ResumeLayout(False)
+        Me.mnuDanceBand.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents mnuDanceBand As MenuStrip
 End Class
