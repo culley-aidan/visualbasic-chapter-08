@@ -31,6 +31,9 @@ Public Class frmSmartHome
     End Sub
     Private Sub CboMonth_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboMonth.SelectedIndexChanged
         btnStatistics.Visible = True
+        If cboMonth.SelectedIndex <> -1 Then
+            index = cboMonth.SelectedIndex
+        End If
     End Sub
     End Sub
 End Class
