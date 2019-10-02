@@ -3,5 +3,6 @@
 ' Date:         October 2nd, 2019
 ' Purpose:      Displays items from a text file
 
+Option Strict On
 Public Class frmSmartHome
 End Class
