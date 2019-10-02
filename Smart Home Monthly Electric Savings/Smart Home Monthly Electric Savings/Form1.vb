@@ -5,4 +5,7 @@
 
 Option Strict On
 Public Class frmSmartHome
+    Private Sub FrmSmartHome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
