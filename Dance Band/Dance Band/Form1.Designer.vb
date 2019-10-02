@@ -23,6 +23,7 @@ Partial Class frmDanceBand
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.mnuDanceBand = New System.Windows.Forms.MenuStrip()
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuDanceBand.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -34,6 +35,8 @@ Partial Class frmDanceBand
         Me.mnuDanceBand.Size = New System.Drawing.Size(800, 24)
         Me.mnuDanceBand.TabIndex = 0
         Me.mnuDanceBand.Text = "MenuStrip1"
+        '
+        'mnuFile
         'frmDanceBand
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
