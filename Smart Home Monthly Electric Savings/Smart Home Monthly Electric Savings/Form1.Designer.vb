@@ -26,6 +26,7 @@ Partial Class frmSmartHome
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.cboMonth = New System.Windows.Forms.ComboBox()
         Me.lblSavings = New System.Windows.Forms.Label()
+        Me.btnStatistics = New System.Windows.Forms.Button()
         CType(Me.picSmartHome, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -69,12 +70,25 @@ Partial Class frmSmartHome
         Me.lblSavings.TabIndex = 3
         Me.lblSavings.Text = "The electric savings for xxxxxxxxx is $XX.XX"
         '
+        'btnStatistics
+        '
+        Me.btnStatistics.BackColor = System.Drawing.Color.SteelBlue
+        Me.btnStatistics.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStatistics.ForeColor = System.Drawing.Color.White
+        Me.btnStatistics.Location = New System.Drawing.Point(181, 310)
+        Me.btnStatistics.Name = "btnStatistics"
+        Me.btnStatistics.Size = New System.Drawing.Size(175, 41)
+        Me.btnStatistics.TabIndex = 4
+        Me.btnStatistics.Text = "Display Statistics "
+        Me.btnStatistics.UseVisualStyleBackColor = False
+        '
         'frmSmartHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.ClientSize = New System.Drawing.Size(540, 450)
+        Me.Controls.Add(Me.btnStatistics)
         Me.Controls.Add(Me.lblSavings)
         Me.Controls.Add(Me.cboMonth)
         Me.Controls.Add(Me.lblTitle)
@@ -91,4 +105,5 @@ Partial Class frmSmartHome
     Friend WithEvents lblTitle As Label
     Friend WithEvents cboMonth As ComboBox
     Friend WithEvents lblSavings As Label
+    Friend WithEvents btnStatistics As Button
 End Class
