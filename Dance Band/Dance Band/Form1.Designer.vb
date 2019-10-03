@@ -52,19 +52,19 @@ Partial Class frmDanceBand
         'mnuDisplay
         '
         Me.mnuDisplay.Name = "mnuDisplay"
-        Me.mnuDisplay.Size = New System.Drawing.Size(180, 22)
+        Me.mnuDisplay.Size = New System.Drawing.Size(164, 22)
         Me.mnuDisplay.Text = "Display Song Set "
         '
         'mnuClear
         '
         Me.mnuClear.Name = "mnuClear"
-        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
+        Me.mnuClear.Size = New System.Drawing.Size(164, 22)
         Me.mnuClear.Text = "&Clear"
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(164, 22)
         Me.mnuExit.Text = "E&xit"
         '
         'lblTitle
@@ -102,6 +102,7 @@ Partial Class frmDanceBand
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Dance_Band.My.Resources.Resources._5819184201_df0392f0e7_b
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.lstSongs)
         Me.Controls.Add(Me.cboGenre)
