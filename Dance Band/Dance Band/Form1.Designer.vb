@@ -27,6 +27,7 @@ Partial Class frmDanceBand
         Me.mnuDisplay = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuClear = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lblTitle = New System.Windows.Forms.Label()
         Me.mnuDanceBand.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,26 +50,37 @@ Partial Class frmDanceBand
         'mnuDisplay
         '
         Me.mnuDisplay.Name = "mnuDisplay"
-        Me.mnuDisplay.Size = New System.Drawing.Size(180, 22)
+        Me.mnuDisplay.Size = New System.Drawing.Size(164, 22)
         Me.mnuDisplay.Text = "Display Song Set "
         '
         'mnuClear
         '
         Me.mnuClear.Name = "mnuClear"
-        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
+        Me.mnuClear.Size = New System.Drawing.Size(164, 22)
         Me.mnuClear.Text = "&Clear"
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(164, 22)
         Me.mnuExit.Text = "E&xit"
+        '
+        'lblTitle
+        '
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitle.Location = New System.Drawing.Point(313, 24)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(174, 33)
+        Me.lblTitle.TabIndex = 1
+        Me.lblTitle.Text = "Dance Band"
         '
         'frmDanceBand
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuDanceBand)
         Me.MainMenuStrip = Me.mnuDanceBand
         Me.Name = "frmDanceBand"
@@ -85,4 +97,5 @@ Partial Class frmDanceBand
     Friend WithEvents mnuDisplay As ToolStripMenuItem
     Friend WithEvents mnuClear As ToolStripMenuItem
     Friend WithEvents mnuExit As ToolStripMenuItem
+    Friend WithEvents lblTitle As Label
 End Class
