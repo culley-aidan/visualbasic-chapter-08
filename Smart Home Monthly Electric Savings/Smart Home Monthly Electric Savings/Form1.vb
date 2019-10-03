@@ -28,6 +28,9 @@ Public Class frmSmartHome
             For intFill = 0 To (strMonths.GetLength(0) - 1)
                 cboMonth.Items.Add(strMonths(intFill))
             Next
+        Else
+            MsgBox(strFileError, , "Error")
+            Close()
         End If
     End Sub
     Private Sub CboMonth_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboMonth.SelectedIndexChanged

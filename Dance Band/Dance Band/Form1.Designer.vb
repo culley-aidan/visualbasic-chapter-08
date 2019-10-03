@@ -52,19 +52,19 @@ Partial Class frmDanceBand
         'mnuDisplay
         '
         Me.mnuDisplay.Name = "mnuDisplay"
-        Me.mnuDisplay.Size = New System.Drawing.Size(164, 22)
+        Me.mnuDisplay.Size = New System.Drawing.Size(180, 22)
         Me.mnuDisplay.Text = "Display Song Set "
         '
         'mnuClear
         '
         Me.mnuClear.Name = "mnuClear"
-        Me.mnuClear.Size = New System.Drawing.Size(164, 22)
+        Me.mnuClear.Size = New System.Drawing.Size(180, 22)
         Me.mnuClear.Text = "&Clear"
         '
         'mnuExit
         '
         Me.mnuExit.Name = "mnuExit"
-        Me.mnuExit.Size = New System.Drawing.Size(164, 22)
+        Me.mnuExit.Size = New System.Drawing.Size(180, 22)
         Me.mnuExit.Text = "E&xit"
         '
         'lblTitle
@@ -92,9 +92,9 @@ Partial Class frmDanceBand
         Me.lstSongs.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstSongs.FormattingEnabled = True
         Me.lstSongs.ItemHeight = 24
-        Me.lstSongs.Location = New System.Drawing.Point(255, 122)
+        Me.lstSongs.Location = New System.Drawing.Point(185, 122)
         Me.lstSongs.Name = "lstSongs"
-        Me.lstSongs.Size = New System.Drawing.Size(292, 316)
+        Me.lstSongs.Size = New System.Drawing.Size(434, 316)
         Me.lstSongs.TabIndex = 3
         Me.lstSongs.Visible = False
         '
