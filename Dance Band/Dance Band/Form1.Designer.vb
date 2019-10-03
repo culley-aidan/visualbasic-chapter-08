@@ -81,7 +81,7 @@ Partial Class frmDanceBand
         '
         Me.cboGenre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboGenre.FormattingEnabled = True
-        Me.cboGenre.Location = New System.Drawing.Point(307, 71)
+        Me.cboGenre.Location = New System.Drawing.Point(310, 71)
         Me.cboGenre.Name = "cboGenre"
         Me.cboGenre.Size = New System.Drawing.Size(180, 32)
         Me.cboGenre.TabIndex = 2
@@ -89,11 +89,14 @@ Partial Class frmDanceBand
         '
         'lstSongs
         '
+        Me.lstSongs.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstSongs.FormattingEnabled = True
-        Me.lstSongs.Location = New System.Drawing.Point(340, 109)
+        Me.lstSongs.ItemHeight = 24
+        Me.lstSongs.Location = New System.Drawing.Point(255, 122)
         Me.lstSongs.Name = "lstSongs"
-        Me.lstSongs.Size = New System.Drawing.Size(120, 95)
+        Me.lstSongs.Size = New System.Drawing.Size(292, 316)
         Me.lstSongs.TabIndex = 3
+        Me.lstSongs.Visible = False
         '
         'frmDanceBand
         '
