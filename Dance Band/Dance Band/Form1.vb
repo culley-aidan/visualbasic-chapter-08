@@ -5,4 +5,7 @@
 
 Option Strict On
 Public Class frmDanceBand
+    Private Sub FrmDanceBand_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
