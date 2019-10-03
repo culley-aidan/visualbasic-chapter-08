@@ -29,6 +29,7 @@ Partial Class frmDanceBand
         Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.cboGenre = New System.Windows.Forms.ComboBox()
+        Me.lstSongs = New System.Windows.Forms.ListBox()
         Me.mnuDanceBand.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -86,11 +87,20 @@ Partial Class frmDanceBand
         Me.cboGenre.TabIndex = 2
         Me.cboGenre.Text = "Select Genre"
         '
+        'lstSongs
+        '
+        Me.lstSongs.FormattingEnabled = True
+        Me.lstSongs.Location = New System.Drawing.Point(340, 109)
+        Me.lstSongs.Name = "lstSongs"
+        Me.lstSongs.Size = New System.Drawing.Size(120, 95)
+        Me.lstSongs.TabIndex = 3
+        '
         'frmDanceBand
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lstSongs)
         Me.Controls.Add(Me.cboGenre)
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.mnuDanceBand)
@@ -111,4 +121,5 @@ Partial Class frmDanceBand
     Friend WithEvents mnuExit As ToolStripMenuItem
     Friend WithEvents lblTitle As Label
     Friend WithEvents cboGenre As ComboBox
+    Friend WithEvents lstSongs As ListBox
 End Class
