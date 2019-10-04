@@ -25,6 +25,7 @@ Partial Class frmGames
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lstGames = New System.Windows.Forms.ListBox()
         Me.cboSelectGame = New System.Windows.Forms.ComboBox()
+        Me.lblDownloads = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -55,12 +56,23 @@ Partial Class frmGames
         Me.cboSelectGame.Name = "cboSelectGame"
         Me.cboSelectGame.Size = New System.Drawing.Size(200, 32)
         Me.cboSelectGame.TabIndex = 2
+        '
+        'lblDownloads
+        '
+        Me.lblDownloads.AutoSize = True
+        Me.lblDownloads.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDownloads.Location = New System.Drawing.Point(529, 57)
+        Me.lblDownloads.Name = "lblDownloads"
+        Me.lblDownloads.Size = New System.Drawing.Size(152, 24)
+        Me.lblDownloads.TabIndex = 3
+        Me.lblDownloads.Text = "Find Downloads "
+        '
         'frmGames
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblDownloads)
         Me.Controls.Add(Me.cboSelectGame)
         Me.Controls.Add(Me.lstGames)
         Me.Controls.Add(Me.lblTitle)
@@ -71,8 +83,8 @@ Partial Class frmGames
 
     End Sub
 
-    Friend WithEvents Label1 As Label
     Friend WithEvents lblTitle As Label
     Friend WithEvents lstGames As ListBox
     Friend WithEvents cboSelectGame As ComboBox
+    Friend WithEvents lblDownloads As Label
 End Class
