@@ -27,7 +27,7 @@ Partial Class frmGames
         Me.cboSelectGame = New System.Windows.Forms.ComboBox()
         Me.lblDownloads = New System.Windows.Forms.Label()
         Me.lblGameDownloads = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -73,28 +73,29 @@ Partial Class frmGames
         '
         Me.lblGameDownloads.AutoSize = True
         Me.lblGameDownloads.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGameDownloads.Location = New System.Drawing.Point(450, 152)
+        Me.lblGameDownloads.Location = New System.Drawing.Point(406, 175)
         Me.lblGameDownloads.Name = "lblGameDownloads"
-        Me.lblGameDownloads.Size = New System.Drawing.Size(174, 40)
+        Me.lblGameDownloads.Size = New System.Drawing.Size(264, 60)
         Me.lblGameDownloads.TabIndex = 4
-        Me.lblGameDownloads.Text = "$GAME has had" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "$DOWNLOADS total"
+        Me.lblGameDownloads.Text = "$GAME" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "has" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "$DOWNLOADS downloads total" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.lblGameDownloads.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblGameDownloads.Visible = False
         '
-        'Button1
+        'btnCalculate
         '
-        Me.Button1.Location = New System.Drawing.Point(440, 255)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(194, 46)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Calculate All Downloads"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCalculate.Location = New System.Drawing.Point(446, 274)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(194, 46)
+        Me.btnCalculate.TabIndex = 5
+        Me.btnCalculate.Text = "Calculate All Downloads"
+        Me.btnCalculate.UseVisualStyleBackColor = True
         '
         'frmGames
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(689, 352)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblGameDownloads)
         Me.Controls.Add(Me.lblDownloads)
         Me.Controls.Add(Me.cboSelectGame)
@@ -112,5 +113,5 @@ Partial Class frmGames
     Friend WithEvents cboSelectGame As ComboBox
     Friend WithEvents lblDownloads As Label
     Friend WithEvents lblGameDownloads As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnCalculate As Button
 End Class
